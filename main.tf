@@ -417,7 +417,7 @@ resource "aws_elb" "wp_elb" {
     "${aws_subnet.wp_public2_subnet.id}"
   ]
 
-  security_groups = ["${aws_security_group.wp_pbulic_sg.id}"]
+  security_groups = ["${aws_security_group.wp_public_sg.id}"]
 
   listener {
     instance_port     = 80
